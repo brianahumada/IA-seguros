@@ -1,0 +1,636 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Seguridad</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/lente.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Dewi
+  * Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+         <img src="{% static 'img/camara.png' %}" alt="">
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">IAseguridad</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">BIENVENIDOS</a></li>
+          <li><a href="#about">ACERCA DE</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#trabaja_con_nosotros">Trabaja con nosotros</a></li>
+          <li><a href="#redes">Redes</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="cta-btn" href="{% url 'index' %}#about">Conoce Nuestro Servicios</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="{%static 'img/principal.jpg' %}" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center">
+        <h2 data-aos="fade-up" data-aos-delay="100">Protegemos lo que más valoras.</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Somos un Equipo de expertos en seguridad, utilizando inteligencia artificial para protegerte.</p>
+        <p data-aos="fade-up" data-aos-delay="300">Mendoza, San Rafael, General Alvear,San Luis, Cordoba.</p>
+        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+          <a href="#about" class="btn-get-started">Descubre nuestros servicios.</a>
+          
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3>Comprometidos con tu seguridad a travez de la tecnología</h3>
+            <img src="{% static 'img/about.jpg' %}" class="img-fluid rounded-4 mb-4" alt="">
+            <p>En IAseguridad, integramos inteligencia artificial con soluciones de seguridad para ofrecerte la máxima protección.Nuestro equipo esta comprometido en garantizar tu tranquilidad a través de servicios innovadores y personalizados.</p>
+            <p>Somos especialistas en la instalación de sistemas de cámaras de seguridad diseñados para proteger todo tipo de locales comerciales. Nos enfocamos en colocar cámaras en puntos estratégicos, capaces de detectar armas y elementos dañinos, asegurando la máxima protección para tu negocio.</p>
+            <p>Con operaciones en San Rafael, General Alvear, Córdoba, y San Luis, estamos comprometidos a ofrecer soluciones avanzadas de seguridad que se adaptan a las necesidades de cada cliente. Confía en IAseguros para mantener tu negocio seguro y bajo control.</p>
+
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Ofrecemos un servicio rápido y confiable nos encargamos de:  
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Instalación de camaras y mantenimiento del sistema.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Atencion al cliente 24hs.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Ofrecemos métodos de pago flexibles para tu comodidad.</span></li>
+              </ul>
+              <p>
+                Confía en IAseguridad para mantener la seguridad de tus instalaciones. Tu tranquilidad es nuestra prioridad.
+              </p>
+
+              <div class="position-relative mt-4">
+                <img src="{% static 'img/about-2.jpg' %}" class="img-fluid rounded-4" alt="">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Clientes Satisfechos</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Instalaciones Completadas</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-headset color-green flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Horas de Soporte</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-people color-pink flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Miembros del Equipo</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nuestros Servicios</h2>
+        <p>Soluciones de Seguridad<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="img">
+                <img src="{% static 'img/servicio_instalacion.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-arrow-down-circle"></i>
+                </div>
+                <a href="{% url 'index' %}" class="stretched-link">
+                  <h3>Instalación de Cámaras de Seguridad</h3>
+                </a>
+                <p>Implementamos sistemas de vigilancia personalizados y estratégicos para garantizar la máxima protección de tus instalaciones.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="img">
+                <img src="{% static 'img/servicio_alarmas.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-medium"></i>
+                </div>
+                <a href="{% url 'index' %}" class="stretched-link">
+                  <h3>Soporte 24/7.</h3>
+                </a>
+                <p>Nuestro equipo está disponible las 24 hs para mantener la seguridad de tu negocio en todo momento. </p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="img">
+                <img src="{% static 'img/servicio_ideas.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-box-arrow-down"></i>
+                </div>
+                <a href="{% url 'index' %}" class="stretched-link">
+                  <h3>Soluciones de Seguridad Inteligente.</h3>
+                </a>
+                <p>Integramos inteligencia artificial en nuestros sistemas de cámaras para detectar amenazas potenciales y proteger tu negocio proactivamente.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+
+    <!-- Clients Section  DEBEMOS RE HACER ESTA PARTE CON LOGOS DE PROBEDORES.-->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/clients/client-1.png' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/clients/client-2.png' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/clients/client-3.png' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/clients/client-4.png' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/clients/client-5.png' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/clients/client-6.png' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+
+
+    
+    <!-- Features Section  CAMBIAR LOS URL DE CONTACTANOS.-->
+    <section id="features" class="features section">
+
+      <div class="container">
+
+        <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+              <i class="bi bi-alarm"></i>
+              <h4 class="d-none d-lg-block">Sistemas de Armas.</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+              <i class="bi bi-camera-video"></i>
+              <h4 class="d-none d-lg-block">Instalacion de Cámaras de Seguridad.</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+              <i class="bi bi-broadcast"></i>
+              <h4 class="d-none d-lg-block"> Sistemas de Seguridad con Sensores.</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+              <i class="bi bi-tools"></i>
+              <h4 class="d-none d-lg-block">Mantenimiento</h4>
+            </a>
+          </li>
+        </ul><!-- End Tab Nav -->
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="features-tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Alarmas</h3>
+                <p class="fst-italic">
+                  Los sistemas de alarmas de IAseguridad están diseñados para ofrecer una protección inmediata y eficaz ante cualquier amenaza. Instalamos alarmas inteligentes que no solo se activan ante intentos de intrusión, sino que también pueden detectar otros peligros como incendios o fugas de gas. Estas alarmas están conectadas a una red de monitoreo centralizada, lo que permite una respuesta rápida y coordinada ante cualquier emergencia. Además, nuestras alarmas pueden ser controladas remotamente a través de aplicaciones móviles, lo que te da la tranquilidad de saber que tu propiedad está segura incluso cuando estás fuera. Ofrecemos opciones personalizables para adaptarnos a tus necesidades específicas, asegurando que siempre tengas el nivel de protección que necesitas.
+                </p>
+                <!-- HAY QUE REDIRIGIR A NUESTRO SERVICIO DE ALARMAS.-->
+                <a class="btn-get-started" href="{% url 'index' %}#contact">Contáctanos</a>
+                
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'img/kidalarmas.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Cámaras de Seguridad</h3>
+                <p>
+                  En IAseguridad, diseñamos y ejecutamos la instalación de sistemas de cámaras de seguridad que se adaptan a las necesidades específicas de tu hogar o negocio. Nuestro equipo experto selecciona estratégicamente los puntos de instalación para maximizar la cobertura y minimizar los puntos ciegos. Utilizamos cámaras de alta resolución con capacidades de visión nocturna y grabación en tiempo real, permitiéndote monitorear tu propiedad en cualquier momento y desde cualquier lugar mediante aplicaciones móviles integradas. Además, nuestras soluciones permiten la detección de movimiento y el reconocimiento de personas, asegurando que siempre estés al tanto de lo que sucede en tu entorno.
+                </p>
+                
+                <a class="btn-get-started" href="{% url 'index' %}#contact">Contáctanos</a>
+
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'img/kidcamaras.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Seguridad.</h3>
+                <p>
+                  Protege tu propiedad con nuestros sistemas de seguridad avanzados, que combinan sensores inteligentes y tecnologías de código de acceso para crear un entorno seguro y controlado. Estos sistemas detectan intrusiones, cambios de temperatura, o la presencia de humo, activando alarmas instantáneas y enviando alertas directamente a tu dispositivo móvil. Además, nuestros sistemas permiten la integración con otros dispositivos de seguridad, ofreciendo una solución completa que se adapta a tus necesidades. La instalación incluye la personalización de códigos de acceso y la configuración de alertas para que solo las personas autorizadas puedan acceder a las áreas protegidas.
+                </p>
+                <a class="btn-get-started" href="{% url 'index' %}#contact">Contáctanos</a>
+                
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'img/working-3.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Mantenimiento</h3>
+                <p>
+                  El mantenimiento regular de los sistemas de seguridad es crucial para garantizar su funcionamiento óptimo y prevenir posibles fallos. En IAseguros, ofrecemos un servicio de mantenimiento integral que incluye revisiones periódicas, actualizaciones de software, y pruebas de funcionamiento de todos los dispositivos de seguridad instalados. Nuestro equipo técnico se asegura de que cada componente de tu sistema esté en perfectas condiciones, desde cámaras y sensores hasta paneles de control y sistemas de alarma. Con nuestro servicio de mantenimiento, puedes estar seguro de que tu sistema de seguridad seguirá protegiendo tu propiedad de manera efectiva y continua.
+                </p>
+                
+                
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'img/working-4.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+
+
+   
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Portfolio Section -->
+    <section id="trabaja_con_nosotros" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Conocenos</h2>
+        <p>Puestos De Trabajo.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        
+          
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Team Section -->
+    <section id="redes" class="team section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Redes</h2>
+        <p>Nuestra red Social</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic"><img src="{% static 'img/team/instagram.png' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Instagram</h4>
+                <span>Seguinos!.</span>
+                <div class="social">
+                  <a href="https://www.instagram.com/ia.seguridadd/"><i class="bi bi-instagram"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contacto.</h2>
+        <p>Contactanos estamos respondiendo.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 ">
+            <div class="row gy-4">
+
+              <div class="col-lg-12">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Donde Nos Encontras</h3>
+                  <p>Mendoza, San Luis, Cordoba</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Teléfono</h3>
+                  <p>+54 2625 53-1350</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email </h3>
+                  <p>iaseguros.rrhh.gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="{% url 'contact' %}" method="post" class="" data-aos="fade-up" data-aos-delay="500">
+              {% csrf_token %}
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  
+                  <div class="col-md-12 text-center">
+                      <div class="loading"></div>
+                      <!-- Mensajes de estado -->
+                    {% if success == 'true' %}
+                      <div class="sent-message">Su mensaje ha sido enviado exitosamente. ¡Gracias!</div>
+                    {% elif success == 'false' %}
+                      <div class="error-message">Hubo un error al enviar su mensaje.</div>
+                    {% else %}
+                      <p>En breve sera atendido!.</p>
+                      <!-- Opcional: Puedes agregar un mensaje por defecto o vacío aquí -->
+                    {% endif %}
+
+                    <button type="submit" class="btn btn-success w-75">Enviar</button>
+                  
+                  </div>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">IAseguridad</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>General Alvear</p>
+            <p>Province Mendoza</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>2625531350</span></p>
+            <p><strong>Email:</strong> <span>iaseguros.rrhh.gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#hero">Bienvenidos</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#about">Acerca de</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Servicios</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#trabaja_con_nosotros">Trabaja Con Nosotros</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Redes</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#redes">instagram</a></li>
+            
+          </ul>
+        </div>
+
+        
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>IAseguridad</span> <strong class="px-1 sitename">Cuidamos</strong> <span>a nuestros clientes.</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Licencia <a href="https://www.instagram.com/ia.seguridadd/"> IAseguridad.</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader 
+   
+  <div id="preloader"></div>
+  -->
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+
+</html>
